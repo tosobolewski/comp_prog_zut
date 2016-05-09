@@ -1,0 +1,8 @@
+Merkury;0.38;au;True;None
+Wenus;0.72;au;True;None
+Ziemia;1.0;au;True;None
+Mars;1.52;au;True;None
+Jowisz;5.2;au;True;None
+Saturn;9.53;au;True;None
+Uran;19.19;au;True;None
+Neptun;30.06;au;True;None

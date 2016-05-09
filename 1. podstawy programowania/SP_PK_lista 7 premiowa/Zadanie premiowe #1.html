@@ -1,0 +1,71 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="pl"><head>
+<meta content="text/html;charset=UTF-8" http-equiv="Content-Type"><title>Zadanie premiowe #1</title>
+
+<meta content="Sławomir Wernikowski swernikowski@zut.edu.pl" name="author"></head>
+<body>
+
+
+﻿<h2 id="problem-name" class="text-center"><span style="font-style: italic; color: rgb(51, 102, 102);">Podstawy
+Programowania Komputerów<br></span>Zadanie premiowe #1 - Szyfr Gronsfelda</h2>
+	
+<div id="problem-body"><p style="margin-bottom: 0cm;">Znany nam już <span style="font-style: italic;">szyfr Cezara</span>&nbsp;ma bardzo&nbsp; poważną wadę – zachowuje 
+częstość występowania znaków. Dzieje się tak dlatego, że pewnej literze w
+ tekście jawnym zawsze odpowiada&nbsp;taka sama litera w tekście 
+zaszyfrowanym. Jeśli wiemy, jakie litery w pewnym języku występują 
+najczęściej (albo najrzadziej), to możemy podjąć próbę złamania takiego 
+szyfru i jak pokazuje praktyka, jeśli tylko szyfrogram będzie 
+odpowiednio długi, mamy duże szanse powodzenia.</p>
+<p style="margin-bottom: 0cm;">Ponad półtora tysiąca lat po Cezarze, 
+Holender Josse Maximilian van Gronsfeld (1598-1667), uczestnik wojny 
+trzydziestoletniej, wynalazł sposób ominięcia tej słabości. 
+Zaproponował on, aby dla szyfrowania kolejnych liter używać innego 
+przesunięcia – takiego, jakie wynika z klucza, który jest znany tylko 
+nadawcy i odbiorcy. Sam klucz jest liczbą, której kolejne cyfry 
+interpretuje się <span style="font-weight: normal;">jako wartość przesunięcia stosowaną dla kolejnych znaków</span>.
+ Dodatkowo wprowadza się zasadę mówiącą, że jeśli klucz jest krótszy niż
+ tekst (zapewne dotyczy to zdecydowanej większości szyfrowanych 
+wiadomości), to w chwili, kiedy wykorzystamy wszystkie cyfry klucza, 
+wracamy do jego początku. Popatrzmy na przykład:</p>
+<p style="margin-bottom: 0cm;">&nbsp;</p>
+<table style="width: 200px;" border="0" cellpadding="5">
+<tbody>
+<tr>
+<td style="text-align: right;">tekst jawny</td>
+<td><span style="font-family: Courier New,monospace;"><strong>CEZAR</strong></span></td>
+</tr>
+<tr>
+<td style="width: 200px; text-align: right;">klucz</td>
+<td>123</td>
+</tr>
+<tr>
+<td style="text-align: right;">tekst zaszyfrowany</td>
+<td><span style="font-family: Courier New,monospace;"><strong>DGCBT</strong></span></td>
+</tr>
+</tbody>
+</table>
+<p style="margin-bottom: 0cm;">Znając już sposób szyfrowania metodą Gronsfelda, bez trudu można odgadnąć, jak wygląda procedura deszyfracji.</p>
+<p style="margin-bottom: 0cm;" align="justify">Twoim zadaniem jest <strong></strong>napisanie pary programów:</p><ul><li>szyfratora wiadomości metodą Gronsfelda.</li><li>deszyfratora wiadomości zaszyfrowanych metodą Gronsfelda.</li></ul>
+<p style="margin-bottom: 0cm;"><strong style="font-weight: normal;">Obydwa programy powinny zapytać użytkownika o:</strong></p>
+<ol><li><p style="margin-bottom: 0cm;">liczbę całkowitą <em>k</em>, 	będącą kluczem szyfru Gronsfelda (<em>0 &lt;= k &lt;= 1000000000</em>);</p>
+</li><li>
+<p style="margin-bottom: 0cm;">tekst do szyfrowania/deszyfrowania, składający się tylko i wyłącznie 	z wielkich 
+liter alfabetu łacińskiego</p>
+</li></ol>
+<p style="margin-bottom: 0cm;"><strong style="font-weight: normal;">W odpowiedzi program</strong> powinien wypisać jeden 
+wiersz tekstu, wynikający z szyfrowania/deszyfrowania tekstu podanego 
+programowi..</p>
+<p style="margin-bottom: 0cm;"><strong>Przykład</strong>:</p>
+<p style="margin-bottom: 0cm;"><em>Wejście szyfratora:</em></p>
+
+<p style="margin-left: 3.75cm; margin-bottom: 0cm;"><span style="font-family: Courier New,monospace;"><strong>12340</strong></span></p>
+<p style="margin-left: 3.75cm; margin-bottom: 0cm;"><span style="font-family: Courier New,monospace;"><strong>ALAMAKOTA</strong></span></p>
+<p style="margin-bottom: 0cm;"><em>Wyjście szyfratora:</em></p>
+<p style="margin-left: 3.75cm; margin-bottom: 0cm;" align="justify"><span style="font-family: Courier New,monospace;"><strong>BNDQALQWE</strong></span></p>
+<p style="margin-bottom: 0cm;" align="justify">&nbsp;</p>
+<p style="margin-bottom: 0cm;"><em>Wejście deszyfratora:</em></p>
+
+<p style="margin-left: 3.75cm; margin-bottom: 0cm;"><span style="font-family: Courier New,monospace;"><strong>12340</strong></span></p>
+<p style="margin-left: 3.75cm; margin-bottom: 0cm;" align="justify"><span style="font-family: Courier New,monospace;"><strong>BNDQALQWE</strong></span></p>
+<p style="margin-bottom: 0cm;"><em>Wyjście deszyfratora:</em></p>
+<p style="margin-left: 3.75cm; margin-bottom: 0cm;" align="justify"><span style="font-family: Courier New,monospace;"><strong>ALAMAKOTA</strong></span></p></div></body></html>

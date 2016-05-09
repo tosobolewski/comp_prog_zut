@@ -1,0 +1,166 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="pl"><head>
+<meta content="text/html; charset=UTF-8" http-equiv="content-type"><title>Lista zadań #2</title>
+
+<meta content="Sławomir Wernikowski swernikowski@zut.edu.pl" name="author"></head>
+<body>
+<h2><span style="font-style: italic; color: rgb(51, 102, 102);">Podstawy
+Programowania Komputerów</span><br>
+</h2>
+<h2>Lista zadań nr 2</h2>
+<span style="font-style: italic;">Uwaga - w
+razie wpadnięcia programu w pętlę, która raczej nie będzie miała szansy
+zakończyć się pomyślnie w dającym się przewidzieć czasie, program można
+przerwać naciśnięciem kombinacji klawiszy <span style="font-weight: bold;">Control-C</span>.</span>
+<ol>
+<li>W roku 1626 holenderscy kolonizatorych odkupili od Indian
+wyspę Manhattan za towary o równowartości 24 dolarów. Napisz program,
+który obliczy, jaką kwotą dyponowaliby dziś Indianie, gdyby złożyli ją
+na lokacie o oprocentowaniu 3,5% w stosunku rocznym. Uwzględnij tzw. <span style="font-style: italic;">podatek Belki<span style="font-style: italic;"></span></span>,
+wynoszący 19%, obliczany przy każdej kapitalizacji odsetek
+i&nbsp;zaokrąglany do kwoty pełnych groszy. Oceń, jak
+wiarygodny jest wynik, który otrzymałeś.&nbsp;</li>
+<li>Małoletnie dziecię programisty bawi się drewnianymi
+klockami i układa z nich piramidę. Piramida jest <span style="font-style: italic;">de facto</span> ścianą
+układaną według prostej zasady - każda sąsiednia niższa warstwa zawiera
+o jeden klocek więcej niż warstwa wyższa. Napisz program, który odpowie
+na następujące pytanie: jeśli dziecię ma <span style="font-style: italic;">n</span> klocków, to ile
+kompletnych warstw może mieć układana przez nie piramida?</li>
+<li>Jeden ze sposobów obliczania liczby π&nbsp;opiera się
+na wykorzystaniu ciągu Leibniza, który prezentuje sie
+następująco:<br>
+<br>
+<img style="width: 298px; height: 42px;" alt="" src="https://upload.wikimedia.org/math/9/e/8/9e804b8a1a11e442be93fed1d52205a9.png"><br>
+<br>
+Napisz program, który zapyta użytkownika o liczbę
+wyrazów&nbsp;ciągu, które należy wziąć pod uwagę, potem obliczy ich
+sumę, a
+następnie wypisze wartość π. Oszacuj eksperymentalnie, ile wyrazów
+ciągu trzeba posumowac, aby uzystać wartość zgodną z π na czterech
+cyfrach po przecinku.<br>
+</li>
+<li>W 1937 roku niemiecki matematyk Lothar Collatz postawił
+nieudowodnioną do dziś hipotezę, którą można przedstawić w postaci
+nastepującej&nbsp; recepty:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-style: italic;"> 1. weź dowolną liczbę naturalną
+c0</span><br style="font-style: italic;">
+<span style="font-style: italic;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+2. jeśli c0 jest parzyste, oblicz nowe c0 jako c0 / 2</span><br style="font-style: italic;">
+<span style="font-style: italic;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+3. jeśli c0 jest nieparzyste, oblicz nowe c0 jako 3 ⋅ c0 + 1</span><br style="font-style: italic;">
+<span style="font-style: italic;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+4. jesli c0 ≠ 1, przejdz do kroku 2</span><br style="font-style: italic;">
+<span style="font-style: italic;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+5. koniec!</span><br>
+Hipoteza Collatza mówi, że niezależnie od początkowej wartości <span style="font-style: italic;">c0</span>, zawsze dochodzi
+sie do <span style="font-style: italic;">c0 = 1</span>.<br>
+Napisz
+program, który zapyta użytkownika o liczbę, a następnie sprawdzi, czy
+hipoteza Collatza jest dla niej spełniona. Twój program powinien
+wypisać wszystkie pośrednie wartości <span style="font-style: italic;">c0</span>.</li>
+<li>Do
+ustalania dnia tygodnia przypadającego na pewien dzień roku używa
+się&nbsp;algorytmu Zellera-Keitha, którego jedną z wersji&nbsp;
+można opisać następującymi
+słowami:<br>
+<ul>
+</ul>
+<ol>
+<li>pomniejsz numer miesiąca o 2</li><li>jeśli wartość miesiąca
+jest mniejsza równa zero, &nbsp;powiększ miesiąc o 12, a rok
+zmniejsz o 1</li>
+<li>weź numer miesiąca, pomnóż przez 83 i podziel przez 32
+(wszystkie dzielenia w algorytmie są całkowite!)</li>
+<li>do otrzymanego wyniku dodaj numer dnia w miesiącu</li>
+<li>do otrzymanego wyniku dodaj rok</li>
+<li>do otrzymanego wyniku dodaj&nbsp;rok/4</li>
+<li>od otrzymanego wyniku odejmij rok/100</li>
+<li>do otrzymanego wyniku dodaj&nbsp; rok/400</li>
+<li>znajdź resztę z dzielenia otrzymanego wyniku przez 7</li>
+<li>brawo!&nbsp;otrzymałeś numer dnia tygodnia w takiej
+oto
+konwencji:<br>
+0 →
+niedziela, 1 → poniedziałek,&nbsp;2 → wtorek, , 3 → środa, 4 →
+czwartek, 5&nbsp;→ piątek, 6&nbsp;→ sobota</li>
+</ol>
+<ul>
+</ul>
+Napisz
+program, który pyta użytkownika kolejno o rok, miesiąc i dzień, a
+następnie wypisuje nazwę dnia tygodnia. Zadbaj o to, aby
+wprowadzana data miała sens.</li>
+<li>Napisz program, który zapyta użytkownika kolejno o:</li>
+<ol>
+<li>bieżącą godzinę (0÷23)</li>
+<li>bieżącą minutę (0÷59)</li>
+<li>liczbę minut (0÷43200)</li>
+</ol>
+a następnie wypisze informację, jaka będzie godzina i minuta
+po upływie czasu określonego w trzeciej danej (jako godzinę i minuty)
+<li>Napisz program, który usunie z pewnej listy wszystkie
+powtórzenia jej elementów. Np. jesli w programie dana jest następująca
+lista:<br>
+<br>
+<span style="font-family: monospace;">lista = [ 2, 6,
+7, 1, 34, 64, 2, 7, 35, 1 ]</span><br>
+<br>
+to po wykonaniu twojego programu powinna prezentować się następująco:<br>
+<br>
+<span style="font-family: monospace;">[2, 6, 7, 1, 34,
+64, 35]</span><br>
+<br>
+</li>
+<li>Napisz program, który odwraca kolejność elementów listy,
+jednak bez użycia funkcji <span style="font-style: italic;">reversed()</span>.&nbsp;Np.
+jesli w programie dana jest następująca lista:<br>
+<span style="font-family: monospace;"><br>
+lista = [ 2, 6, 7, 1, 34, 64, 2, 7, 35, 1 ]</span><br>
+<br>
+to po wykonaniu twojego program powinna prezentować się następująco:<br>
+<br>
+<span style="font-family: monospace;">[1, 35, 7, 2,
+64, 34, 1, 7, 6, 2]</span><br>
+</li>
+<li>Napisz program, który sprawdza, czy pewna lista jest
+palindromem, tzn. czy&nbsp;kolejność jej elementów jest identyczna
+przy czytaniu od lewej i od prawej. Np. palindromem jest lista poniższa:<br>
+<br>
+<span style="font-family: monospace;">[ 1, 7, 5, 8, 5,
+7, 1]</span><br>
+<br>
+a nie jest palindromem taka lista:<br>
+<br>
+<span style="font-family: monospace;">[ 1, 7, 5, 8, 7,
+5, 1]</span></li>
+<li>Napisz program, który analizuje zawartość dwóch list i
+buduje trzecią
+listę z takich elementów pierwszej listy, które nie występują w drugiej
+i z takich elementów drugiej listy, które nie występują w pierwszej.</li>
+<li>Napisz program, który sprawdza, czy pewne dwie listy
+zawierają takie same elementy (ich kolejność w listach jest bez
+znaczenia)</li>
+<li>Napisz program, który obliczy następujące średnie ze
+wszystkich elementów danej listy:</li>
+<ul>
+<li><a href="https://pl.wikipedia.org/wiki/%C5%9Arednia_arytmetyczna" target="_blank">arytmetyczną</a></li>
+<li><a href="https://pl.wikipedia.org/wiki/%C5%9Arednia_harmoniczna" target="_blank">harmoniczną</a></li>
+<li><a href="https://pl.wikipedia.org/wiki/%C5%9Arednia_geometryczna" target="_blank">geometryczną</a></li>
+<li><a href="https://pl.wikipedia.org/wiki/%C5%9Arednia_kwadratowa" target="_blank">kwadratową<br>
+</a></li>
+<li>do testów użyj następujących danych:</li>
+<ul>
+<li>liczby: 1.,2.,3.,4.,5.</li>
+<li>średnia arytmetyczna = 3.</li>
+<li>średnia harmoniczna&nbsp;≈ 2.18978</li>
+<li>średnia geometryczna&nbsp;≈ 2.6052</li>
+<li>średnia kwadratowa&nbsp;≈ 3.31662</li>
+</ul>
+<li>wskazówka: do obliczenia pierwiastka stopnia <span style="font-style: italic;">n</span> z liczby <span style="font-style: italic;">a</span> użyj funkcji
+&nbsp;<span style="font-family: monospace;">pow()</span>
+z modułu <span style="font-family: monospace;">math</span>;
+zauważ, że pierwiastkowanie<span style="font-style: italic;">
+n-tego</span> stopnia to to samo, co podnoszenie do potęgi <span style="font-style: italic;">1/n</span></li>
+</ul>
+</ol>
+</body></html>

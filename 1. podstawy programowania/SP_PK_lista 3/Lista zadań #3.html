@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="pl"><head>
+<meta content="text/html; charset=UTF-8" http-equiv="content-type"><title>Lista zadań #3</title>
+
+<meta content="Sławomir Wernikowski swernikowski@zut.edu.pl" name="author"></head>
+<body>
+<h2><span style="font-style: italic; color: rgb(51, 102, 102);">Podstawy
+Programowania Komputerów</span><br>
+</h2>
+<h2>Lista zadań nr 3</h2>
+<span style="font-style: italic;"></span>
+<ol>
+<li>Ciekawą cechą języka polskiego&nbsp;jest to, że
+wszystkie imiona żeńskie kończą się literą&nbsp;<span style="font-style: italic; font-weight: bold;">a</span>.
+Napisz program, który pyta użytkownika o imię, a następnie zgaduje czy
+użytkownik jest panią czy panem. Uwzględnij fakt, że imię może być
+wprowadzone małymi lub wielkimi literami. Zwróć uwagę na wyjątki (np. <span style="font-style: italic;">Kuba</span> czy <span style="font-style: italic;">Bonawentura</span>).</li>
+<li>Przedostatnia cyfra numeru PESEL określa płeć - jeśli jest
+nieparzysta, PESEL jest przypisany mężczyźnie, jeśli parzysta -
+kobiecie. Napisz program, który odgaduje płeć na podstawie
+wprowadzonego numeru PESEL - sprawdź, czy twojemu programowi na pewno
+podano 11 cyfr.</li>
+<li>Ostatnia cyfra numeru PESEL jest tzw. cyfrą kontrolną i
+służy do weryfikacji poprawności numeru. Korzysta się z niej
+następująco:</li>
+<ol>
+<li>oblicza się wartość wyrażenia &nbsp;<span style="font-style: italic;">c</span><sub style="font-style: italic;">1</sub><span style="font-style: italic;"> + 3c</span><sub style="font-style: italic;">2 </sub><span style="font-style: italic;">+ 7c</span><sub style="font-style: italic;">3</sub><span style="font-style: italic;"> + 9c</span><sub style="font-style: italic;">4</sub><span style="font-style: italic;"> + c</span><sub style="font-style: italic;">5</sub><span style="font-style: italic;"> + 3c</span><sub style="font-style: italic;">6</sub><span style="font-style: italic;"> + 7c</span><sub style="font-style: italic;">7</sub><span style="font-style: italic;"> + 9c</span><sub style="font-style: italic;">8</sub><span style="font-style: italic;"> + c</span><sub style="font-style: italic;">9</sub><span style="font-style: italic;"> + 3c</span><sub style="font-style: italic;">10</sub><span style="font-style: italic;"> + c</span><sub style="font-style: italic;">11</sub> (gdzie <span style="font-style: italic;">c</span><sub style="font-style: italic;">i</sub> to <span style="font-style: italic;">i-ta</span> cyfra numeru
+PESEL)</li>
+<li>sprawdza się&nbsp;ostatnią cyfrę otrzymanego wyniku -
+jeśli&nbsp;jest to 0, PESEL jest poprawny; jeśli nie, PESEL
+jest błędny</li>
+</ol>
+Napisz program, który wczytuje numer PESEL i sprawdza, czy jest on
+poprawny
+<li>Napisz program, który wczytuje pewien ciąg znaków i
+sprawdza, czy jest on palindromem. Np słowo KAJAK jest palindromem, a
+słowo KONIK nie.</li><li>Napisze program, który wczytuje polskie nazwisko zakończone na -ski bądź -ska i odmienia to nazwisko przez przypadki</li>
+<li>Napisz program, który sprawdza, czy pewien napis może być
+adresem e-mail.&nbsp;</li>
+<li>Napisz program, który wczytuje dwa słowa i sprawdza, czy są
+one swoimi anagramami. Np. słowa KIMA i MIKA są swoimi anagramami, a
+MIKA i MIKI nie.&nbsp;</li>
+<li>Użytkownik wprowadza jeden wiersz tekstu, zawierający pewną
+liczbę
+liczb całkowitych rozdzielonych spacjami. Napisz programi, który
+obliczy
+sumę tak wprowadzonych liczb.</li><li>Pewien numerolog oblicza <span style="font-style: italic;">Cyfrę Życia</span>
+z sumy cyfr składających się na datę urodzenia klienta.&nbsp;Jeśli
+otrzymana suma ma więcej niż jedną cyfrę, to numerolog ponownie&nbsp;
+poddaje&nbsp;ją procesowi sumowania i tak aż do skutku, którym jest
+otrzymanie sumy mniejszej od 10. Uzyskana z takim trudem cyfra
+dziesiętna jest oznajmiana klientowi, z czego&nbsp;płyną rozmaite
+konsekwencje. Napisz program, który obliczy <span style="font-style: italic;">Cyfrę Życia</span> z dowolnej liczby wprowadzonej do programu, np. dla danej 20161231 wynikiem powinno być 7.</li><li>Szyfr Cezara to prosty kod, w którym każdą literę zastępuje
+się literą kolejną w alfabecie (przesuwa się ją o 1), a literę <span style="font-style: italic; font-weight: bold;">Z</span>
+zastępuje się literą <span style="font-weight: bold; font-style: italic;">A</span>.
+Np. tekst <span style="font-weight: bold;">QZUIPO</span>
+to zakodowany <span style="font-weight: bold;">PYTHON</span>.
+Napisz program, który wczytuje jeden wiersz tekstu i szyfruje go
+szyfrem Cezara. Zachowaj się jak Rzymianin - szyfruj wyłacznie znaki
+alfabetu łacińskiego (pozostałe pomijaj), a zaszyfrowany tekst
+wyprowadzaj wielkimi literami.</li><li>Szyfr Cezara można skomplikować, wprowadzając inne przesunięcie niż 1. Napisz program, który wczytuje jeden wiersz tekstu i liczbę określającą przesunięcie z przedziału (1..26). Zaszyfruj tekst wejściowy</li><li>Napisz program deszyfrujący szyfr Cezara z dowolnym przesunięciem.</li><li>Napisz
+program, który liczy litery we wczytanym tekście i prezentuje wynik w
+postaci uproszczonego &nbsp;histogramu w kolejności alfabetycznej. Dla
+tekstu na wejściu:<br><span style="font-family: monospace;">ALA MA KOTA</span><br>wynik powinien wyglądać następująco:<br><span style="font-family: monospace;">A 4</span><br style="font-family: monospace;"><span style="font-family: monospace;">K 1</span><br style="font-family: monospace;"><span style="font-family: monospace;">L 1</span><br style="font-family: monospace;"><span style="font-family: monospace;">M 1</span><br style="font-family: monospace;"><span style="font-family: monospace;">O 1</span><br style="font-family: monospace;"><span style="font-family: monospace;">T 1</span></li>
+</ol>
+</body></html>

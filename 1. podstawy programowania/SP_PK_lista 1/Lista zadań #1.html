@@ -1,0 +1,152 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="pl"><head>
+<meta content="text/html; charset=UTF-8" http-equiv="content-type"><title>Lista zadań #1</title>
+
+<meta content="Sławomir Wernikowski swernikowski@zut.edu.pl" name="author"></head>
+<body>
+<h2><span style="font-style: italic; color: rgb(51, 102, 102);">Podstawy
+Programowania Komputerów</span><br>
+</h2>
+<h2>Lista zadań nr 1</h2>
+<ol>
+<li>Napisz program, który zapyta użytkownika o wartość zmiennej
+rzeczywistej x, a następnie obliczy wartość następującego wyrażenia:<br>
+<br>
+<img style="width: 258px; height: 51px;" alt="" src="x.jpg"><br>
+<br>
+Uwaga 1: dokładną wartość π dostarczy ci Python - musisz tylko
+zaimportować symbol o nazwie <span style="font-family: monospace;">pi</span>
+z modułu <span style="font-family: monospace;">math</span>,
+np. tak:<br>
+<br>
+<span style="font-family: monospace;">from math</span>
+<span style="font-family: monospace;">import pi </span><br style="font-family: monospace;">
+<span style="font-family: monospace;">s = pi * r * r</span><br>
+<br>
+Uwaga 2: dla <span style="font-style: italic;">x = 0</span>
+wyrażenie przybiera wartość <span style="font-style: italic;">0,0</span>
+,&nbsp;dla <span style="font-style: italic;">x = 1</span>:
+<span style="font-style: italic;">0.09492340844071674</span>,
+a dla <span style="font-style: italic;">x=10</span>:
+<span style="font-style: italic;">0.10092027643208898</span></li><li>Uzupełnij poniższy program tak, aby po wczytaniu dwóch
+liczb rzeczywistych
+wypisywał - z czytelnym komentarzem - ich sumę, różnicę, iloczyn i
+iloraz. Zabezpiecz się przed złośliwym użytkownikiem, który miałby
+ochotę dzielić przez zero.<br>
+<br>
+<span style="font-family: monospace;">a =
+float(input("Podaj liczbę a: "))</span><br style="font-family: monospace;">
+<span style="font-family: monospace;">b&nbsp;=
+float(input("Podaj liczbę b: "))</span><br style="font-family: monospace;">
+<span style="font-family: monospace;"># tu umieść swój
+kod</span><br style="font-family: monospace;">
+<span style="font-family: monospace;">print("To
+koniec!")</span><br>
+<br>
+</li>
+<li>Rozbuduj poprzedni program w taki sposób, aby wczytywał
+jeszcze jedną wartość (całkowitą!) i aby w zależności od jej wartości
+wykonywał jedno z czterech działań. Konwersacja z programem powinna
+wyglądać mniej więcej tak:<br>
+<br>
+<span style="font-family: monospace;">WITAJ W
+KALKULATORZE</span><br style="font-family: monospace;">
+<span style="font-family: monospace;">CO CHCESZ ZROBIĆ?</span><br style="font-family: monospace;">
+<span style="font-family: monospace;">1 - dodać</span><br style="font-family: monospace;">
+<span style="font-family: monospace;">2 - odjąć</span><br style="font-family: monospace;">
+<span style="font-family: monospace;">3 - wymnożyć</span><br style="font-family: monospace;">
+<span style="font-family: monospace;">4 - podzielić</span><br style="font-family: monospace;">
+<span style="font-family: monospace;">0 - zakończyć
+pracę</span><br style="font-family: monospace;">
+<span style="font-family: monospace;">TWÓJ WYBÓR?:</span><br style="font-family: monospace;">
+<span style="font-family: monospace;">PODAJ LICZBĘ A:</span><br style="font-family: monospace;">
+<span style="font-family: monospace;">PODAJ LICZBĘ B:</span><br>
+<br>
+</li>
+<li>Latami przestępnymi i nieprzestępnymi (w kalendarzu gregoriańskim!) rządzi następująca zasada:<br style="font-style: italic;"><span style="font-style: italic;">
+- jeśli rok nie jest podzielny przez 4, to jest nieprzestępny</span><br style="font-style: italic;"><span style="font-style: italic;">- w przeciwnym przypadku, jeśli &nbsp;nie jest podzielny przez 100, to jest przestępny</span><br style="font-style: italic;"><span style="font-style: italic;">
+- w przeciwnym przypadku, jeśli nie jest podzielny przez 400, to nie jest przestępny</span><br style="font-style: italic;"><span style="font-style: italic;">- w przeciwnym przypadku jest przestępny</span><br>
+Napisz program, który zapyta użytkownika o&nbsp;rok i odpowie, czy
+jest to rok przestępny czy też nie.<br>Uwaga - kalendarz gregoriański
+obowiązuje w Polsce od 1582 roku.</li><li>Kiedy kupujesz jakiś produkt jako konsument, płacisz za
+niego kwotę będącą sumą ceny netto i podatku VAT, którego stawka
+podstawowa w Polsce wynosi 23%. Napisz program, który wczytuje cenę i
+rozbija ją na kwotę netto i podatek VAT, konwersując z użytkownikiem
+np. tak:<br>
+<span style="font-family: monospace;"><br>
+PODAJ CENĘ: 123<br>
+CENA NETTO TO: 100.00 zł<br>
+PODATEK VAT TO: 23.00 zł<br>
+<br>
+</span>Uwaga: może ci się przydać funkcja służąca do
+zaokrąglania liczb rzeczywistych, nazywająca się <span style="font-family: monospace;">round()</span>.<br>
+Użycie:<br>
+<span style="font-family: monospace;">round(wartość,
+ile_miejsc_po_kropce)</span><br>
+np.<br>
+<span style="font-family: monospace;">print(round(3.1415,2)
+→&nbsp;3.14</span><br>
+</li><li>Obecnie obowiązująca w Polsce skala podatku PIT mówi, że
+podatek oblicza się następująco:<br>
+- przy dochodzie nie przekraczającym 85528 zł: podatek = 18% dochodu
+minus 556 zł 02 gr<br>
+- przy dochodzie równym bądź wyższym od 85528 zł: podatek = 14 839 zł
+02 gr + 32 % nadwyżki ponad 85 528 zł<br>
+Napisz program, który zapyta użytkownika o jego dochód i obliczy
+podatek dochodowy.<br>
+Pamiętaj, że podatek zaokrąglamy do pełnych złotych.<br>
+<span style="font-style: italic;">Uwaga: opisana
+metoda czegoś nie uwzględnia - czego?</span></li><li>(<span style="font-weight: bold; color: red;">dla
+twardzieli</span>)&nbsp; Słynny niemiecki matematyk Carl
+Friedrich Gauss opracował algorytm obliczania daty Wielkanocy, który
+opisany jest<span style="text-decoration: underline;"></span>
+poniżej. Napisz program, który zapyta użytkownika o rok z przedziału od
+1900 do 2099, a następnie poda datę Wielkanocy w tym roku.&nbsp;<br>
+Algorytm:<br style="font-style: italic;"><span style="font-style: italic;">- dzielimy liczbę roku przez 19 i znajdujemy resztę a</span><br style="font-style: italic;"><span style="font-style: italic;">- dzielimy liczbę roku przez 4 i znajdujemy resztę b</span><br style="font-style: italic;"><span style="font-style: italic;">- dzielimy liczbę roku przez 7 i znajdujemy resztę c</span><br style="font-style: italic;"><span style="font-style: italic;">- resztę a mnożymy przez 19, do iloczynu dodajemy 24,
+sumę dzielimy przez 30 i znajdujemy resztę d</span><br style="font-style: italic;"><span style="font-style: italic;">- dzielimy (2b + 4c + 6d + 5) przez 7 i znajdujemy
+resztę e</span><br style="font-style: italic;"><span style="font-style: italic;">- sprawdzamy, czy d + e &lt; 10; jeśli tak,
+to
+Wielkanoc jest (d + e + 22) marca, jeśli nie, to (d + e – 9) kwietnia.</span></li>
+<li>Poniższy program wypisuje pierwszych 10 nieujemnych potęg
+liczby 2. Rozbuduj go w taki sposób, aby pytał o to, ile potęg wypisać,
+a następnie postępował zgodnie z wyborem.<br>
+<br>
+<span style="font-family: monospace;">potega = 1</span><br style="font-family: monospace;">
+<span style="font-family: monospace;">for n in
+range(10):</span><br style="font-family: monospace;">
+<span style="font-family: monospace;">&nbsp;&nbsp;&nbsp;
+print("2 do potęgi ", n, " to ", potega)</span><br style="font-family: monospace;">
+<span style="font-family: monospace;">&nbsp;&nbsp;&nbsp;
+potega *= 2</span><br style="font-family: monospace;">
+&nbsp;&nbsp;&nbsp; </li><li>Zmodyfikuj program z poprzedniego punktu w taki sposób, aby
+obliczał także ujemne potęgi liczby 2.</li>
+<li>Napisz program, który pyta użytkownika o wartość liczby n,
+a następnie rysuje kwadrat (widoczny, niestety,&nbsp;jako
+prostokąt) o boku n,, np. dla n = 5 powinno to wyglądać tak:<br>
+<span style="font-family: monospace;">*****</span><br style="font-family: monospace;">
+<span style="font-family: monospace;">* &nbsp; *</span><br style="font-family: monospace;">
+<span style="font-family: monospace;">* &nbsp; *</span><br style="font-family: monospace;">
+<span style="font-family: monospace;">* &nbsp; *</span><br style="font-family: monospace;">
+<span style="font-family: monospace;">*****</span><br>
+</li>
+<li>Ciąg
+Fibonacciego to ciąg, w którym pierwsze dwie liczby sa równe 1, a
+kolejne liczy się zawsze jako sumę dwóch poprzednich. Oznacza to, że
+początkowe wyrazy tego ciągu to:<br>
+1, 1, 2, 3, 5, 8, 13, 21, 34, ...<br>
+Napisz program, który zapyta użytkownika o numer wyrazu i obliczy jego
+wartość.</li>
+<li>Silnia
+z n (oznaczana jako n!) obliczana jest jako iloczyn wszystkich wartości
+od 1 do n. Czyli:<br>
+<span style="font-style: italic;">1! = 1</span><br style="font-style: italic;">
+<span style="font-style: italic;">2! = 2</span><br style="font-style: italic;">
+<span style="font-style: italic;">3! = 6</span><br style="font-style: italic;">
+<span style="font-style: italic;">4! = 24</span><br style="font-style: italic;">
+<span style="font-style: italic;">etc.</span><br>
+Napisz program, który zapyta użytkownika o wartość n i
+obliczy silnię.</li>
+</ol>
+<hr style="width: 100%; height: 2px;">Rozwiązania<br><a href="01.py" target="_blank">
+1</a> <a href="02.py" target="_blank">2</a> <a href="03.py" target="_blank">3</a> <a href="04.py" target="_blank">4</a> <a href="05.py" target="_blank">5</a> <a href="06.py" target="_blank">6</a> <a href="07.py" target="_blank">7</a> <a href="08.py" target="_blank">8</a> <a href="09.py" target="_blank">9</a> <a href="10.py" target="_blank">10</a> <a href="11.py" target="_blank">11</a> <a href="12.py" target="_blank">12</a>
+</body></html>

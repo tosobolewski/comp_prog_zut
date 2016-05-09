@@ -1,0 +1,3 @@
+Wulkan;0.03;au;False;None
+Faeton;2.7;au;False;None
+Pluton;39.48;au;False;Pluton is not Planet since 24/08/2006

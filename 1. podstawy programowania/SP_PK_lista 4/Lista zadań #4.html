@@ -1,0 +1,125 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="pl"><head>
+<meta content="text/html; charset=UTF-8" http-equiv="content-type"><title>Lista zadań #4</title>
+
+<meta content="Sławomir Wernikowski swernikowski@zut.edu.pl" name="author"></head>
+<body>
+<h2><span style="font-style: italic; color: rgb(51, 102, 102);">Podstawy
+Programowania Komputerów</span><br>
+</h2>
+<h2>Lista zadań nr 4</h2>
+<span style="font-style: italic;"></span>
+<ol>
+<li>Napisz i przetestuj funkcję o nazwie <span style="font-style: italic;">CzyPrzestępny</span>,
+która otrzymuje jako parametr liczbę całkowitą reprezentującą rok,
+zwracającą <span style="font-style: italic;">True</span>
+jeśli rok jest przestępny i <span style="font-style: italic;">False</span>
+w przeciwnym przypadku.</li>
+<li>Napisz i przetestuj funkcję o nazwie <span style="font-style: italic;">DniWMiesiącu</span>,
+która otrzymuje dwa parametry: pierwszy (liczba całkowita)
+reprezentujący numer miesiąca i drugi (liczba całkowita),
+reprezentujący rok; funkcja powinna zwracać liczbę dni w podanym
+miesiącu podanego roku lub <span style="font-style: italic;">None</span>,
+jeśli podano nieodpowiednie argumenty.</li>
+<li>Napisz i przetestuj funkcję o nazwie <span style="font-style: italic;">DzieńWRoku</span>,
+która otrzymuje jako&nbsp;parametry trzy liczby całkowite: pierwsza
+reprezentuje rok, druga miesiąc, trzecia dzień miesiąca; funkcja
+powinna obliczać, którym dniem w roku jest dzień określony w
+parametrach albo zwracać <span style="font-style: italic;">None</span>,
+jeśli argumenty są niepoprawne.</li>
+<li>Napisz i przetestuj funkcję o nazwie <span style="font-style: italic;">DzieńTygodnia</span>,która
+otrzymuje jako&nbsp;parametry trzy liczby całkowite: pierwsza
+reprezentuje rok, druga miesiąc, trzecia dzień miesiąca; funkcja
+powinna obliczać jaki dzień tygodnia wypada w podany dzień i zwracać 0
+dla niedzieli, 1 dla poniedziałku, etc.; zwróć <span style="font-style: italic;">None</span> jeśli
+argumenty są niepoprawne.</li>
+<li>Napisz i przetestuj funkcję o nazwie <span style="font-style: italic;">DniDoKońcaRoku</span>,
+która otrzymuje jako&nbsp;parametry trzy liczby całkowite: pierwsza
+reprezentuje rok, druga miesiąc, trzecia dzień miesiąca; funkcja
+powinna obliczać, ile minie dni do końca roku począwszy od dnia
+określonego w parametrach; zwróć <span style="font-style: italic;">None</span>
+jeśli argumenty są niepoprawne.</li>
+<li>Napisz i przetestuj funkcję o nazwie <span style="font-style: italic;">DniMiędzyDatami</span>,
+która otrzymuje jako&nbsp;parametry sześć liczb całkowitych:
+pierwsze trzy
+reprezentują rok, miesiąc i dzień pierwszej daty, kolejne trzy -
+drugiej daty; funkcja
+powinna obliczać, ile dni mija pomiędzy podanymi datami; rozważ
+zachowania funkcji we wszystkich możliwych przypadkach.</li>
+<li>Poniższy kod pokazuje, jak można skłonić Pythona do
+pokazania nam bieżącej daty:<br>
+<br>
+<span style="font-family: monospace;">import datetime</span><br style="font-family: monospace;">
+<span style="font-family: monospace;">dziś =
+datetime.datetime.now()</span><br style="font-family: monospace;">
+<span style="font-family: monospace;">print("Rok:" +
+str(dziś.year))</span><br style="font-family: monospace;">
+<span style="font-family: monospace;">print("Miesiąc:
+" + str(dziś.month))</span><br style="font-family: monospace;">
+<span style="font-family: monospace;">print("Dzień: "
++ str(dziś.day))</span><br style="font-family: monospace;">
+<br>
+Wykorzystaj
+ten kod do napisania programu, który pyta użytkownika o datę urodzenia,
+a następnie wypisuje informację o liczbie dni, jakie użytkownik przeżył
+już na tym łez padole :)</li>
+<li>Napisz i przetestuj funkcję o nazwie <span style="font-style: italic;">TydzieńWRoku</span>,
+która&nbsp;otrzymuje jako&nbsp;parametry trzy liczby całkowite:
+pierwsza
+reprezentuje rok, druga miesiąc, trzecia dzień miesiąca; funkcja
+powinna obliczać numer tygodnia w roku odpowiadającego temu dniu; zwróć
+<span style="font-style: italic;">None</span>
+jeśli argumenty są niepoprawne. Załóż, że tydzień zaczyna się w
+poniedziałek oraz że pierwszy tydzień roku zaczyna się 1 stycznia i
+kończy w pierwszą niedzielę roku.&nbsp;</li>
+<li>Napisz i przetestuj funkcję o nazwie <span style="font-style: italic;">IleLiter</span>, która
+otrzymuje łańcuch jako argument i liczy zawarte w nim litery.</li>
+<li>W
+Europie przywykliśmy do tego, że zużycie paliwa przez pojazdy wyraża
+się w litrach na 100km, jednak w USA używa się zupełnie innej miary:
+liczby mil jakie można przejechać na jednym galonie paliwa. Napisz i
+przetestuj 2 funkcje, które wykonują przeliczenia pomiędzy tymi dwomam
+systemami. </li>
+<li>Zapoznaj się z algorytmem sprawdzania poprawności numeru
+NIP opisanym <a href="https://pl.wikipedia.org/wiki/NIP#Znaczenie_numeru" target="_blank">tutaj</a>, a następnie napisz i
+przetestuj funkcję nazwie <span style="font-style: italic;">CzyNIPPoprawny</span>,
+która otrzymuje numer NIP zapisany jako łańcuch i zwraca <span style="font-style: italic;">True</span>, jeśli numer
+jest poprawny oraz <span style="font-style: italic;">False</span>
+w przeciwnym przypadku.</li>
+<li>Liczba
+pierwsza to liczba, która nie ma innych dzielników oprócz jedynki i
+samej siebie. Liczbami pierwszymi są np. 3, 7, 23, a nie są nimi 4, 8 i
+24. Napisz i przetestuj funkcję o nazwie <span style="font-style: italic;">CzyPierwsza</span>, która
+otrzymuje jako parametr jedną liczbę całkowitą i zwraca <span style="font-style: italic;">True</span>, jeśli
+argument jest liczbą pierwszą oraz <span style="font-style: italic;">False</span>
+w przeciwnym przypadku.&nbsp;</li>
+<li>Napisz program, który odpytuje użytkownika o pewną kwotę
+wyrażoną w złotych i groszach, a następnie przelicza tę sumę na
+minimalną liczbę obowiązujących w Polsce środków płatniczych (banknotów
+i monet). Np. 73 zł i 32 gr to:<br>1 x 50zł, 1 x 20zł, 1 x 2 zł, 1 x 1 zł, 1 x 20 gr, 1 x 10gr i 1 x 2gr.</li>
+<li>Pewien nierozsądny łańcuszek, zbyt często rozsyłany w
+Internecie, twierdzi, że "<span style="font-style: italic;">miesiąc
+z 5 pełnymi weekendami przypada raz na 823 lata!&nbsp;Chińczycy
+nazywają to&nbsp;kieszenią pełną srebra, a każdy kto usłyszał tę
+nowinę, winien ją - według Feng Shui - przekazać dalej, w przeciwnym
+wypadku zostanie nędzarzem</span>". Przez grzeczność pominiemy fakt, że słowo <span style="font-style: italic;">weekend</span>
+raczej nie było znane w starożytnych Chinach i zajmiejmy się wyłącznie
+arytmetyczną stroną tego zagadnienia. Przeanalizuj, jakie warunki musi
+spełniać miesiąc, aby było w nim 5 weekendów, a wiedząc to, napisz
+program, który odpytuje użytkownika o numer roku i wskazuje te miesiące
+owego roku, które szczycą się tą błogosławioną cechą.&nbsp;
+</li>
+<li>Napisz program, który odpytuje kolejno użytkownika o:<br>
+<ul>
+<li>datę płatności pewnej faktury</li>
+<li>kwotę tejże faktury</li>
+</ul>
+a
+następnie oblicza kwotę karnych odsetek od przeterminowanej zaległości
+od dnia następnego po terminie płatności do dzisiaj.
+Załóż, że odsetki oblicza się tylko za dni robocze (dla uproszczenia
+przyjmiemy, że są to dni od poniedziałku do piątku i nie będziemy
+oglądać się na święta) i że wynoszą one 8%
+rocznie. Pamiętaj, że kwotę odsetek zaokrągla sie do 50 gr.</li>
+</ol>
+</body></html>

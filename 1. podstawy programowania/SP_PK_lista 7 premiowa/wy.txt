@@ -1,0 +1,1 @@
+Podaj liczbê ca³kowit¹ 0<=k<=1000000000 :Podaj tekst do zaszyfrowania :BNDQALQWE
